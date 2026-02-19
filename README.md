@@ -39,7 +39,7 @@ Final Output: Named dense_17 (standard naming), providing 5 continuous values fo
 
 
 Why This Architecture for model iQH.3.1?
-Model iQH.3.1 starts with a small but capable network (roughly 15,000 parameters) to enable fast training cycles and easy debugging on common hardware. The 128 → 64 progression reduces dimensionality step-by-step while preserving important information.
+Model iQH.3.1 starts with a small but capable network (around 15,000 parameters) to enable fast training cycles and easy debugging on common hardware. The 128 → 64 progression reduces dimensionality step-by-step while preserving important information.
 Batch Normalization is placed after most dense layers because forex data distributions shift constantly (non-stationary environment). This technique keeps internal activations in a consistent range, reduces training instability, and prevents problems like vanishing or exploding gradients.
 The 5-dimensional output aligns perfectly with SAC requirements for continuous control in trading. It commonly represents parameters such as mean and log-standard deviation for two Gaussian actions (e.g., position size and directional bias), plus auxiliary outputs if needed. This allows model iQH.3.1 to make precise, nuanced decisions instead of simple buy/sell/hold choices.
 The training so far shows no crashes, no NaN values, and no divergence, which confirms the architecture handles noisy financial data effectively during the ongoing learning process.
