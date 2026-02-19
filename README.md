@@ -69,7 +69,9 @@ Graph Group 3: Actor, Critic Losses + Entropy
 TensorBoard Losses and Entropy
 Actor and critic losses remain controlled and stable. Entropy begins higher (strong exploration) and decreases gradually, which is exactly how SAC is designed to work—moving toward more confident, reward-maximizing actions.
 
-<img width="1303" height="580" alt="iQH_tb_graph_3" src="https://github.com/user-attachments/assets/70e00275-958a-40c2-968b-37610222ed66" />
+
+<img width="1298" height="612" alt="iQH_tb_graph_5" src="https://github.com/user-attachments/assets/ecff602f-e5f6-48fa-b42d-239b28bbcdf0" />
+
 
 
 Graph Group 4: Performance / Win Rate Curve
@@ -83,7 +85,7 @@ Graph Group 5: Predicted Actions Over Time
 TensorBoard Actions
 Action time-series show initial noise but emerging patterns. This indicates the policy of model iQH.3.1 is shifting from random behavior toward structured, learned trading choices.
 
-<img width="1298" height="612" alt="iQH_tb_graph_5" src="https://github.com/user-attachments/assets/ecff602f-e5f6-48fa-b42d-239b28bbcdf0" />
+<img width="1303" height="580" alt="iQH_tb_graph_3" src="https://github.com/user-attachments/assets/70e00275-958a-40c2-968b-37610222ed66" />
 
 
 Future Directions
