@@ -74,7 +74,7 @@ Actor and critic losses remain controlled and stable. Entropy begins higher (str
 
 Graph Group 4: Performance / Win Rate Curve
 TensorBoard Performance
-A key metric (likely rolling win rate or similar) shows an upward direction. This confirms model iQH.3.1 is making progressively better decisions during the current training phase.
+A key metric shows an upward direction. This confirms model iQH.3.1 is making progressively better decisions during the current training phase.
 
 <img width="1301" height="560" alt="iQH_tb_graph_4" src="https://github.com/user-attachments/assets/c281e377-8449-4345-b827-2235cd72da08" />
 
